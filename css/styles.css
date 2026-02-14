@@ -1,3 +1,6 @@
+h1, h2, h3, p {
+  margin: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #FFFFFF;
@@ -5,8 +8,33 @@ body {
   line-height: 1.5;        
   letter-spacing: 0.02em;  
 }
+.header{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-header{
+  width: 1158px;
+  margin: 0% auto;
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.header ul{
+  display: flex;
+}
+.container-features{
+  width: 1158px;
+  margin: 0 auto;
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+}
 ul{
-  list-style-type: none;
+   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -30,6 +58,7 @@ ul{
   text-transform: uppercase;
   color: #F4F4FD;
   text-decoration: none;
+  margin: 0% auto;
 }
 .logo-part-footer {
   color: #4D5AE5;
@@ -41,6 +70,12 @@ ul{
   letter-spacing: 0.02em;
   color: #2E2F42;
   text-decoration: none;
+  padding: 0% 20px;
+  display: flex;
+  margin-left: 40px;
+}
+adress{
+  font-style: normal;
 }
 .address-contact{
   font-weight: 400;
@@ -50,6 +85,9 @@ ul{
   color: #434455;
   text-decoration: none;
   font-style: normal;
+  padding: 0% 20px;
+  display: flex;
+  margin-left: 80px;
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -62,6 +100,17 @@ color: #404BBF;
 .hero-section {
   background-color: #2E2F42;
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  top: 72px;
+  padding: 188px 0;
+}
+.container-hero{
+  width: 1158px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-title {
   font-size: 56px;
@@ -70,6 +119,8 @@ color: #404BBF;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   text-align: center;
+  margin: 0 auto 48px;
+  max-width: 496px;
 }
 .hero-button {
   font-family: 'Roboto', sans-serif;
@@ -80,6 +131,10 @@ color: #404BBF;
   color: #FFFFFF;
   background-color: #4D5AE5;
   cursor: pointer;
+  width: 169px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -87,13 +142,26 @@ color: #404BBF;
 }
 .team{
   background-color: #F4F4FD;
+  width: 100%;
+  top: 1016px;
+  margin: 0% auto;
+  padding: 120px 0;
 }
-.team-title {
-  font-size: 36px;
+.container-team {
+  width: 1158px;
+  margin: 0 auto;
+}
+.team li {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2E2F42;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.team ul{
+   display: flex;
+   gap: 24px;
 }
 .team-title{
   font-weight: 700;
@@ -114,8 +182,16 @@ color: #404BBF;
   letter-spacing: 0.02em;
   text-align: center;
 }
-.team li {
-  background-color: #FFFFFF;
+.features{
+  width: 100%;
+  top: 672px;
+  margin: 0% auto;
+  padding: 120px 0;
+  display: flex;
+}
+.features ul{
+  display: flex;
+  gap: 24px;
 }
 .features h3 {
   font-weight: 500;
@@ -129,6 +205,19 @@ color: #404BBF;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.portfolio{
+  padding: 120px 0;
+}
+.portfolio ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container-portfolio{
+  width: 1158px;
+  margin: 0% auto;
+  padding: 24px 0;
 }
 .portfolio h2 {
   font-size: 36px;
@@ -152,4 +241,14 @@ color: #404BBF;
   background-color: #2E2F42;
   color: #f4f4fd;
   font-size: 16px;
+  width: 100%;
+  margin: 0% auto;
+  padding: 120px 0;
+}
+.container-footer{
+  width: 1158px;
+  margin: 0% auto;
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
 }
