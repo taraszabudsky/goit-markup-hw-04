@@ -12,6 +12,7 @@ body {
   display: flex;
   width: 100%;
   margin: 0 auto;
+  border-bottom: 1px solid #e7e9fc;
 }
 .container-header{
   width: 1158px;
@@ -20,6 +21,7 @@ body {
   padding: 24px 0;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc
 }
 .header ul{
   display: flex;
@@ -70,12 +72,16 @@ ul{
   letter-spacing: 0.02em;
   color: #2E2F42;
   text-decoration: none;
-  padding: 0% 20px;
-  display: flex;
+  padding: 24px 0;
+  display: block;
   margin-left: 40px;
 }
-adress{
+address {
   font-style: normal;
+}
+.adress ul{
+  display: flex;
+  gap: 40px;
 }
 .address-contact{
   font-weight: 400;
@@ -85,9 +91,8 @@ adress{
   color: #434455;
   text-decoration: none;
   font-style: normal;
-  padding: 0% 20px;
+  padding: 24px 0;
   display: flex;
-  margin-left: 80px;
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -111,6 +116,7 @@ color: #404BBF;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc
 }
 .hero-title {
   font-size: 56px;
@@ -131,10 +137,11 @@ color: #404BBF;
   color: #FFFFFF;
   background-color: #4D5AE5;
   cursor: pointer;
-  width: 169px;
-  height: 56px;
   display: block;
   margin: 0 auto;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -188,6 +195,18 @@ color: #404BBF;
   margin: 0% auto;
   padding: 120px 0;
   display: flex;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .features ul{
   display: flex;
