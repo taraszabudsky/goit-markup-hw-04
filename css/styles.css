@@ -14,7 +14,7 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   gap: 76px;
 }
 .container{
@@ -24,6 +24,7 @@ body {
 }
 .header ul{
   display: flex;
+  gap: 40px;
 }
 ul{
    margin: 0;
@@ -85,7 +86,6 @@ address ul{
   font-style: normal;
   padding: 24px 0;
   display: inline-block;
-  margin-left: auto
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -256,7 +256,7 @@ color: #404BBF;
 .portfolio h3{
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2E2F42;
 }
