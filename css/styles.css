@@ -290,7 +290,9 @@ color: #404BBF;
   display: flex;
 }
 .footer .container{
-  gap: 16px;
+   flex-direction: column;
+   gap: 16px;
+   align-items: flex-start;
 }
 .footer p{
   max-width: 264px;
