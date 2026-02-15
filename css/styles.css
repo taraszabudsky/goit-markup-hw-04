@@ -9,29 +9,20 @@ body {
   letter-spacing: 0.02em;  
 }
 .header{
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
   border-bottom: 1px solid #e7e9fc;
 }
-.container-header{
-  width: 1158px;
-  margin: 0% auto;
+.header .container {
   display: flex;
-  padding: 24px 0;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc
+}
+.container{
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .header ul{
   display: flex;
-}
-.container-features{
-  width: 1158px;
-  margin: 0 auto;
-  display: flex;
-  padding: 24px 0;
-  align-items: center;
 }
 ul{
    margin: 0;
@@ -79,7 +70,7 @@ ul{
 address {
   font-style: normal;
 }
-.adress ul{
+address ul{
   display: flex;
   gap: 40px;
 }
@@ -109,14 +100,6 @@ color: #404BBF;
   margin: 0 auto;
   top: 72px;
   padding: 188px 0;
-}
-.container-hero{
-  width: 1158px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 1px solid #e7e9fc
 }
 .hero-title {
   font-size: 56px;
@@ -154,9 +137,8 @@ color: #404BBF;
   margin: 0% auto;
   padding: 120px 0;
 }
-.container-team {
-  width: 1158px;
-  margin: 0 auto;
+.team-wrapper{
+  padding: 32px 16px;
 }
 .team li {
   line-height: 1.11;
@@ -164,7 +146,7 @@ color: #404BBF;
   text-align: center;
   color: #2E2F42;
   background-color: #FFFFFF;
-  border-radius: 4px;
+  border-radius: 0 0 4px 4px;
 }
 .team ul{
    display: flex;
@@ -190,11 +172,7 @@ color: #404BBF;
   text-align: center;
 }
 .features{
-  width: 100%;
-  top: 672px;
-  margin: 0% auto;
   padding: 120px 0;
-  display: flex;
 }
 .visually-hidden {
   position: absolute;
@@ -215,7 +193,7 @@ color: #404BBF;
 .features h3 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2E2F42;
 }
@@ -231,12 +209,8 @@ color: #404BBF;
 .portfolio ul{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-}
-.container-portfolio{
-  width: 1158px;
-  margin: 0% auto;
-  padding: 24px 0;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio h2 {
   font-size: 36px;
@@ -261,13 +235,13 @@ color: #404BBF;
   color: #f4f4fd;
   font-size: 16px;
   width: 100%;
-  margin: 0% auto;
-  padding: 120px 0;
+  padding: 100px 0; 
 }
-.container-footer{
-  width: 1158px;
-  margin: 0% auto;
-  display: flex;
-  padding: 24px 0;
-  align-items: center;
+.footer .container{
+ flex-direction: column;
+  gap: 16px;
+  align-items: start;
+}
+.footer p{
+  max-width: 264px;
 }
