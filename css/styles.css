@@ -71,6 +71,7 @@ ul{
 }
 address {
   font-style: normal;
+  margin-left: auto
 }
 address ul{
   display: flex;
@@ -163,6 +164,8 @@ color: #404BBF;
   color: #2E2F42;
   text-align: center;
   margin-bottom: 72px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 .team h3 {
   font-weight: 500;
@@ -287,8 +290,6 @@ color: #404BBF;
   display: flex;
 }
 .footer .container{
-  display: flex;
-  flex-direction: column;
   gap: 16px;
 }
 .footer p{
@@ -297,6 +298,10 @@ color: #404BBF;
 }
 .logo-footer {
   display: block;
-  margin-bottom: 16px;
   justify-content: flex-start;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
