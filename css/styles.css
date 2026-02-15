@@ -84,7 +84,8 @@ address ul{
   text-decoration: none;
   font-style: normal;
   padding: 24px 0;
-  display: flex;
+  display: inline-block;
+  margin-left: auto
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -142,6 +143,7 @@ color: #404BBF;
   padding: 32px 16px;
 }
 .team li {
+  max-width: 264px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -254,7 +256,7 @@ color: #404BBF;
 .portfolio h3{
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.2
   letter-spacing: 0.02em;
   color: #2E2F42;
 }
@@ -285,9 +287,16 @@ color: #404BBF;
   display: flex;
 }
 .footer .container{
+  display: flex;
+  flex-direction: column;
   gap: 16px;
-  align-items: start;
 }
 .footer p{
   max-width: 264px;
+  margin: 0;
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 16px;
+  justify-content: flex-start;
 }
