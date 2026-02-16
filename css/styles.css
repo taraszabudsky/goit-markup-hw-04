@@ -301,6 +301,7 @@ color: #404BBF;
 .logo-footer {
   display: block;
   justify-content: flex-start;
+  margin-bottom: 16px;
 }
 img {
   display: block;
