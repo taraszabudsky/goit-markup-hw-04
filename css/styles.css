@@ -67,7 +67,6 @@ ul{
   text-decoration: none;
   padding: 24px 0;
   display: block;
-  margin-left: 40px;
 }
 address {
   font-style: normal;
@@ -216,8 +215,6 @@ color: #404BBF;
   width: 264px; 
   background-color: #fff;
   text-align: left; 
-  padding: 24px;
-  border-radius: 4px;
   box-sizing: border-box;
 }
 .features h3 {
