@@ -84,6 +84,7 @@ ul{
   padding: 24px 0;
   display: block;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link.active,
 .nav-link:hover,
@@ -125,6 +126,7 @@ address {
   font-style: normal;
   padding: 24px 0;
   display: inline-block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -137,7 +139,7 @@ color: #404BBF;
 .hero-section {
   background-color: #2E2F42;
   text-align: center;
-  max-width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 188px 0;
   background-image:
@@ -151,7 +153,7 @@ color: #404BBF;
     background-repeat: no-repeat;
 }
 .hero-section .container{
-  max-width: 1440px;
+   width: 100%;
 }
 .hero-title {
   font-size: 56px;
@@ -201,7 +203,10 @@ color: #404BBF;
   background-color: #FFFFFF;
   border-radius: 0 0 4px 4px;
   box-sizing: border-box;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 4px 6px rgba(0, 0, 0, 0.08),
+    0 8px 12px rgba(0, 0, 0, 0.06);
 }
 .team ul{
     display: flex;
@@ -254,6 +259,7 @@ color: #404BBF;
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .features{
   padding: 120px 0;
@@ -299,6 +305,19 @@ color: #404BBF;
   color: #434455;
   margin: 0;
 }
+.features svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  fill: #4D5AE5;
+  transition: fill 0.25s ease;
+}
+
+.features li:hover svg,
+.features li:focus svg {
+  fill: #404BBF;
+}
 .portfolio{
   padding: 120px 0;
 }
@@ -309,19 +328,7 @@ color: #404BBF;
   overflow: hidden;
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.portfolio li::before {
-  content: "";
-  position: absolute; 
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(77, 90, 229, 0.8);
-  opacity: 0;
-  transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio li .portfolio-wrapper {
   position: absolute;
@@ -335,7 +342,7 @@ color: #404BBF;
   align-items: center;
   text-align: center;
   color: #fff;
-  transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   padding: 16px;
 }
@@ -351,13 +358,14 @@ color: #404BBF;
 }
 .portfolio li:hover,
 .portfolio li:focus {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  /* transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15); */
 }
 .portfolio ul{
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 48px; 
+  gap: 48px 24px;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -399,7 +407,7 @@ color: #404BBF;
   display: block;
   width: 100%;
   height: auto;
-  transition: transform 0.3s ease;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio li:hover .portfolio-image img,
 .portfolio li:focus .portfolio-image img {
@@ -420,7 +428,7 @@ color: #404BBF;
   text-align: center;
   padding: 16px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio li:hover .portfolio-overlay,
 .portfolio li:focus .portfolio-overlay {
@@ -436,15 +444,6 @@ color: #404BBF;
   font-size: 16px;
   margin: 0;
 }
-
-.portfolio h2 {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2E2F42;
-  margin-bottom: 72px;
-}
 .footer{
   background-color: #2E2F42;
   color: #f4f4fd;
@@ -455,7 +454,7 @@ color: #404BBF;
 .footer .container {
   display: flex;
    gap: 120px;
-   align-items: flex-start;
+   align-items: baseline;
 
 }
 .logo-footer-block{
@@ -492,8 +491,7 @@ img {
 .icons-footer {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-
+  gap: 16px;
   list-style: none;
 }
 
@@ -503,10 +501,26 @@ img {
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons a:hover,
 .icons a:focus,
 .icons-footer a:hover,
 .icons-footer a:focus {
   background-color: #404BBF; 
+}
+.icons a svg,
+.icons-footer a svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #fff; 
+  transition: fill 0.25s ease;
+}
+
+.icons a:hover svg,
+.icons a:focus svg,
+.icons-footer a:hover svg,
+.icons-footer a:focus svg {
+  fill: #404BBF; 
 }
