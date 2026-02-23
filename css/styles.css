@@ -152,9 +152,6 @@ color: #404BBF;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.hero-section .container{
-   width: 100%;
-}
 .hero-title {
   font-size: 56px;
   font-weight: 700;
@@ -204,9 +201,9 @@ color: #404BBF;
   border-radius: 0 0 4px 4px;
   box-sizing: border-box;
   box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 4px 6px rgba(0, 0, 0, 0.08),
-    0 8px 12px rgba(0, 0, 0, 0.06);
+    0 2px 1px rgba(46,47,66,0.08),
+    0 1px 1px rgba(46,47,66,0.16),
+    0 1px 6px rgba(46,47,66,0.08);
 }
 .team ul{
     display: flex;
@@ -240,10 +237,6 @@ color: #404BBF;
   margin-bottom: 8px;
   margin-top: 0;
 }
-/* .team-wrapper img {
-  width: 264px;
-  height: 260px;
-} */
 .icons {
   display: flex;
   gap: 24px;
@@ -305,13 +298,19 @@ color: #404BBF;
   color: #434455;
   margin: 0;
 }
-.features svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 16px;
-  fill: #4D5AE5;
-  transition: fill 0.25s ease;
+.feature-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.feature-icon-wrapper svg {
+  width: 64px;
+  height: 64px;
+  fill: #2e2f42;
 }
 
 .features li:hover svg,
@@ -355,11 +354,6 @@ color: #404BBF;
 .portfolio li:focus::before {
   bottom: 0;
   opacity: 1;
-}
-.portfolio li:hover,
-.portfolio li:focus {
-  /* transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15); */
 }
 .portfolio ul{
   display: flex;
@@ -509,7 +503,6 @@ img {
 .icons-footer a:focus {
   background-color: #404BBF; 
 }
-.icons a svg,
 .icons-footer a svg {
   display: block;
   width: 100%;
@@ -517,7 +510,9 @@ img {
   fill: #fff; 
   transition: fill 0.25s ease;
 }
-
+.icons a svg {
+  fill: #f4f4fd;
+}
 .icons a:hover svg,
 .icons a:focus svg,
 .icons-footer a:hover svg,
