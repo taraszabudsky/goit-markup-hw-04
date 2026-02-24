@@ -257,6 +257,7 @@ color: #404BBF;
   list-style: none;
   padding: 0;
   margin: 0;
+  color: #F4F4FD;
 }
 .icons a {
   display: flex;
@@ -323,9 +324,9 @@ color: #404BBF;
   border: 1px solid #8e8f99;
 }
 .feature-icon-wrapper svg {
-  width: 64px;
-  height: 64px;
-  fill: #2e2f42;
+  width: 264px;
+  height: 112px;
+  /* fill: #2e2f42; */
 }
 
 .features li:hover svg,
@@ -516,6 +517,12 @@ img {
 }
 .icons-footer svg {
   fill: #f4f4fd;
+  /* width: 24px;
+  height: 24px; */
+  display: block;      
+  margin: auto;        
+  fill: #f4f4fd;
+  transition: fill 0.25s ease;
 }
 .icons-footer a {
   display: flex;
