@@ -317,6 +317,7 @@ color: #404BBF;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 264px;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
@@ -324,9 +325,7 @@ color: #404BBF;
   border: 1px solid #8e8f99;
 }
 .feature-icon-wrapper svg {
-  width: 264px;
-  height: 112px;
-  /* fill: #2e2f42; */
+  fill: #2e2f42;
 }
 
 .features li:hover svg,
@@ -508,9 +507,6 @@ img {
   gap: 16px;
   list-style: none;
 }
-.icons-footer a {
-  background-color: #4d5ae5;
-}
 .icons-footer a:hover,
 .icons-footer a:focus {
   background-color: #31d0aa;
@@ -543,13 +539,6 @@ background-color: #31d0aa;
 .icons a {
   width: 40px;
   height: 40px;
-}
-
-.icons a:hover svg,
-.icons a:focus svg,
-.icons-footer a:hover svg,
-.icons-footer a:focus svg {
-  fill: #404BBF; 
 }
 .icons a svg,
 .icons-footer a svg {
