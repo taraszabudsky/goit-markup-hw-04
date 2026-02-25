@@ -250,14 +250,20 @@ color: #404BBF;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team .icons a.team-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .team .icons a.team-icon:hover,
 .team .icons a.team-icon:focus {
   background-color: #404bbf;
 }
 
 .team .icons a.team-icon svg {
-  width: 40px;
-  height: 40px;
+  width: 16px;
+  height: 16px;
   fill: #f4f4fd;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -483,9 +489,6 @@ color: #404BBF;
   justify-content: flex-start;
   margin-bottom: 16px;
 }
-.footer svg{
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 img {
   display: block;
   max-width: 100%;
@@ -527,7 +530,6 @@ img {
   fill: #f4f4fd;
   display: block;      
   margin: auto;        
-  transition: fill 0.25s ease;
 }
 .icons-footer a {
   display: flex;
@@ -537,16 +539,18 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icons-footer a svg {
+  fill: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  margin: auto;
 }
 
 .icons-footer a:hover,
 .icons-footer a:focus {
   background-color: #31d0aa; 
-}
-.icons-footer a:hover,
-.icons-footer a:focus {
-  background-color: #31d0aa;
 }
 .icons a svg,
 .icons-footer a svg {
