@@ -35,6 +35,16 @@ body {
   padding: 0;
   position: relative;
 }
+address {
+  font-style: normal;
+}
+nav {
+  margin-right: auto;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
 .address-list {
   display: flex;
   gap: 40px;
